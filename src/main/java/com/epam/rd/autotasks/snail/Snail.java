@@ -12,7 +12,11 @@ public class Snail
         d=sc.nextInt();
         h=sc.nextInt();
         if(c<=d) {
-            System.out.println("Impossible");
+            if (d > h) {
+                System.out.println(1);
+            } else {
+                System.out.println("Impossible");
+            }
         }else{
             int dt=0,days=0;
             while(dt<h){
